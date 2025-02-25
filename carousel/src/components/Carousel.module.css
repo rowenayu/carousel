@@ -1,0 +1,6 @@
+.carousel {
+    overflow: auto;
+    padding: 15px 15px;
+    display: flex;
+    gap: 30px;
+}

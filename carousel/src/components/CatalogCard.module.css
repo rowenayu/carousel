@@ -1,0 +1,91 @@
+.card {
+    flex: 1;
+    max-width: 285px;
+    text-align: left;
+    background-color: #F8F8F8;
+    gap: 10px;
+}
+
+.tag {
+    background-color: transparent;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 12px;
+    border-bottom-right-radius: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
+}
+
+.sale-tag {
+    background-color: lightblue;
+}
+
+.blank-tag {
+    visibility: hidden;
+}
+
+.item-info {
+    margin: 20px;
+    line-height: 1;
+}
+
+.item-name {
+    font-size: 1.25rem;
+    margin-bottom: 0px;
+}
+
+.item-description {
+    font-size: 0.75rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.item-price {
+    margin: 20px;
+    line-height: 1;
+}
+
+.crossed-out {
+    font-size: 0.75rem;
+    text-decoration: line-through;
+    margin: 0px;
+}
+
+.blank-price {
+    visibility: hidden;
+    height: 0;
+    margin: 0;
+    line-height: 0;
+}
+
+.sale-price {
+    color: red;
+    margin: 0px;
+}
+
+.points-and-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-to-cart-btn {
+    padding: 10px 22px;
+    color: white;
+    background-color: red;
+    margin-right: 10px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: darkred;
+}

@@ -1,6 +1,8 @@
 import { CatalogItem, CatalogResponse } from "../types/types";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import CatalogCard from "./CatalogCard";
+import styles from "./Carousel.module.css";
 
 const Carousel = () => {
     const [items, setItems] = useState<CatalogItem[]>([]);
@@ -25,13 +27,16 @@ const Carousel = () => {
     if (loading) return <div>Loading...</div>;
     if (error) return <div>{error}</div>;
 
+    const addToCart = (item: CatalogItem) => {
+        console.log(`Added to cart: ${item.name}`)
+    }
+
     return (
-        <div>
+        <div className={styles.carousel}>
             {items.length > 0 ? (
                 items.map((item) => (
                     <div key={item.name}>
-                        <p>{item.name}</p>
-                        <p>{item.description}</p>
+                        <CatalogCard item={item} addToCart={addToCart} />
                     </div>
                 ))
             ) : (
