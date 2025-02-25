@@ -14,7 +14,7 @@ const CatalogCard = ( { item, addToCart } : CatalogItemProps) => {
     
     const wasCashPrice = wasPrice?.cashPrice?.amount ?? 0;
     const currentCashPrice = currentPrice.cashPrice.amount ?? 0;
-    const currentPointsPrice = currentPrice?.pointsPrice.amount ?? 0;
+    const currentPointsPrice = currentPrice.pointsPrice.amount ?? 0;
     const wasPointsPrice = wasPrice?.pointsPrice.amount ?? 0;
 
     return (
