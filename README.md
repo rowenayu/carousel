@@ -3,13 +3,13 @@
 ## How to run app
 1. Open a terminal and navigate to the carousel directory 
 2. Run the following commands:
-`npm install` # Install dependencies
-`npm run dev` # Start the application
+`npm install` &
+`npm run dev`
 
 ## How to run tests
 1. Open a terminal and navigate to the carousel directory 
 2. Run command:
-`npm run test` # Execute unit tests
+`npm run test`
 
 ## Approach and Trade-offs
 The Carousel feature was built using React, Vite, and Vitest. This approach is a modern, performant, and scalable way to handle dynamic UI components like carousels. 
